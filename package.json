@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "webpack serve --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "serve": "live-server build --verbose",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,10 +21,13 @@
   },
   "homepage": "https://github.com/diegosano/fulljs-project#readme",
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "@babel/runtime": "^7.17.9"
   },
   "devDependencies": {
+    "babel-loader": "^8.2.5",
     "babel-plugin-transform-runtime": "^6.23.0",
+    "clean-webpack-plugin": "^4.0.0",
     "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.9.0",
