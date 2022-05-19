@@ -22,7 +22,8 @@
   "homepage": "https://github.com/diegosano/fulljs-project#readme",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
-    "@babel/runtime": "^7.17.9"
+    "@babel/runtime": "^7.17.9",
+    "axios": "^0.27.2"
   },
   "devDependencies": {
     "babel-loader": "^8.2.5",
