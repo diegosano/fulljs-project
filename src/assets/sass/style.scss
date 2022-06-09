@@ -144,6 +144,10 @@ body {
 }
 
 .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
   max-width: 300px;
   height: 400px;
   padding: $paddingDefault + $paddingDefault;
@@ -177,12 +181,13 @@ body {
     &._success {
       padding: $paddingDefault + $paddingDefault;
       border-radius: $radiusDefault;
-      background-color: green;
+      background-color: purple;
       color: white;
       transition: $transitionSpeed;
+      border: none;
 
       &:hover {
-        background-color: rgb(0, 207, 0);
+        opacity: 0.5;
       }
     }
   }

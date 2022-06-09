@@ -1,10 +1,14 @@
 import axios from 'axios';
 
+import { Nav } from '../../components/Navbar';
+
 import Loader from '../../img/loader.gif';
 
 export const Contact = {
   render: async () => {
     const view = `
+      ${Nav}
+
       <div>
         <h1>Contact Page</h1>
 
